@@ -401,7 +401,7 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
@@ -811,3 +811,18 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+# Gitalk
+# 详细配置信息见 https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+# hexo+next配置教程见 https://iochen.com/2018/01/06/use-gitalk-in-hexo/
+gitalk:
+  enable: true
+  ClientID: 48dce994c65cfcda101d # MUST HAVE, Github client id for the Gitment
+  ClientSecret: 4da0b467a5dffeb174f9787d3493307380775701 # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  repo: EatSleepDebug.github.io # MUST HAVE, The repo you use to store Gitment comments
+  owner: EatSleepDebug # MUST HAVE, Your Github ID
+  adminUser: EatSleepDebug # MUST HAVE, Your Github ID
+  perPage: 10 #每页多少个评论
+  labels: Gitalk
+  pagerDirection: last #排序方式是从旧到新（first）还是从新到旧（last）
+  # createIssueManually: true
