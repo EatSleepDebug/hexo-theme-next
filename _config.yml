@@ -378,15 +378,16 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  enable: true
+  appid: fx80tPD79B7hLRsFsXqdIRSb-gzGzoHsz # your leancloud application appid
+  appkey: HymW6K8FpqXuqDkrn07ChOXz # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: Valine 目前使用的是Gravatar(http://cn.gravatar.com/) 作为评论列表头像～\n请自行登录或注册Gravatar，然后修改自己的头像，评论的时候，留下在Gravatar注册时所使用的邮箱即可～\n昵称和网址可随意填写(可不填)，网址为点击该条评论的昵称时跳转的页面～\n在评论的顶部栏中填写邮箱会在你的评论被回复时收到邮件通知，我在收到评论后会尽快回复~ # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
+  visitor: true # Article reading statistic https://valine.js.org/visitor.html
 
 
 # Support for youyan comments system.
@@ -816,7 +817,7 @@ version: 5.1.4
 # 详细配置信息见 https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 # hexo+next配置教程见 https://iochen.com/2018/01/06/use-gitalk-in-hexo/
 gitalk:
-  enable: true
+  enable: false
   ClientID: 48dce994c65cfcda101d # MUST HAVE, Github client id for the Gitment
   ClientSecret: 4da0b467a5dffeb174f9787d3493307380775701 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   repo: EatSleepDebug.github.io # MUST HAVE, The repo you use to store Gitment comments

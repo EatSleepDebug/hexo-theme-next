@@ -12,7 +12,7 @@
         owner: '{{ theme.gitalk.owner }}',
         admin: ['{{ theme.gitalk.adminUser }}'],
         perPage: {{ theme.gitalk.perPage }},
-        labels: ['{ theme.gitalk.labels }'],
+        labels: ['{{ theme.gitalk.labels }}'],
         pagerDirection: '{{ theme.gitalk.pagerDirection }}'
       })
       gitalk.render('gitalk-container')           
